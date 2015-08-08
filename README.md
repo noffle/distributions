@@ -80,3 +80,93 @@ make
 should do everything.
 
 
+## Make
+
+Running make will create a releases folder with: 
+
+```
+$ tree releases -L 5
+releases
+├── electron-app
+│   └── 0.1.0
+│       ├── darwin
+│       │   └── x64
+│       │       └── IPFS.app
+│       ├── linux
+│       │   ├── ia32
+│       │   │   ├── IPFS
+│       │   │   ├── LICENSE
+│       │   │   ├── content_shell.pak
+│       │   │   ├── icudtl.dat
+│       │   │   ├── libffmpegsumo.so
+│       │   │   ├── libgcrypt.so.11
+│       │   │   ├── libnode.so
+│       │   │   ├── libnotify.so.4
+│       │   │   ├── locales
+│       │   │   ├── natives_blob.bin
+│       │   │   ├── resources
+│       │   │   ├── snapshot_blob.bin
+│       │   │   └── version
+│       │   └── x64
+│       │       ├── IPFS
+│       │       ├── LICENSE
+│       │       ├── content_shell.pak
+│       │       ├── icudtl.dat
+│       │       ├── libffmpegsumo.so
+│       │       ├── libgcrypt.so.11
+│       │       ├── libnode.so
+│       │       ├── libnotify.so.4
+│       │       ├── locales
+│       │       ├── natives_blob.bin
+│       │       ├── resources
+│       │       ├── snapshot_blob.bin
+│       │       └── version
+│       └── win32
+│           ├── ia32
+│           │   └── IPFS-win32
+│           └── x64
+│               └── IPFS-win32
+└── go-ipfs
+    ├── v0.3.2
+    │   ├── hashes
+    │   ├── ipfs_v0.3.2_darwin-386.zip
+    │   ├── ipfs_v0.3.2_darwin-amd64.zip
+    │   ├── ipfs_v0.3.2_linux-386.zip
+    │   ├── ipfs_v0.3.2_linux-amd64.zip
+    │   └── ipfs_v0.3.2_linux-arm.zip
+    ├── v0.3.4
+    │   ├── hashes
+    │   ├── ipfs_v0.3.4_darwin-386.zip
+    │   ├── ipfs_v0.3.4_darwin-amd64.zip
+    │   ├── ipfs_v0.3.4_linux-386.zip
+    │   ├── ipfs_v0.3.4_linux-amd64.zip
+    │   └── ipfs_v0.3.4_linux-arm.zip
+    ├── v0.3.5
+    │   ├── hashes
+    │   ├── ipfs_v0.3.5_darwin-386.zip
+    │   ├── ipfs_v0.3.5_darwin-amd64.zip
+    │   ├── ipfs_v0.3.5_linux-386.zip
+    │   ├── ipfs_v0.3.5_linux-amd64.zip
+    │   └── ipfs_v0.3.5_linux-arm.zip
+    ├── v0.3.6
+    │   ├── hashes
+    │   ├── ipfs_v0.3.6_darwin-386.zip
+    │   ├── ipfs_v0.3.6_darwin-amd64.zip
+    │   ├── ipfs_v0.3.6_freebsd-amd64.zip
+    │   ├── ipfs_v0.3.6_linux-386.zip
+    │   ├── ipfs_v0.3.6_linux-amd64.zip
+    │   ├── ipfs_v0.3.6_linux-arm.zip
+    │   ├── ipfs_v0.3.6_windows-386.zip
+    │   └── ipfs_v0.3.6_windows-amd64.zip
+    └── v0.3.7
+        ├── hashes
+        ├── ipfs_v0.3.7_darwin-386.zip
+        ├── ipfs_v0.3.7_darwin-amd64.zip
+        ├── ipfs_v0.3.7_freebsd-amd64.zip
+        ├── ipfs_v0.3.7_linux-386.zip
+        ├── ipfs_v0.3.7_linux-amd64.zip
+        ├── ipfs_v0.3.7_linux-arm.zip
+        ├── ipfs_v0.3.7_windows-386.zip
+        └── ipfs_v0.3.7_windows-amd64.zip
+```
+

@@ -11,4 +11,4 @@ go-ipfs:
 	cd dists/$@ && make
 
 publish: all_dists
-	ipfs add -q -r build | tail -n1 >>versions
+	ipfs add -q -r releases | tail -n1 >> versions
